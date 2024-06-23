@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    text-align: center;
+    color: #8A2BE2;
+    text-decoration: underline;
+    margin-bottom: 45px;
+    margin-top: -7px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 15px;
+}
+
+label {
+    align-self: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    color: #FF4500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #333;
+    color: #FFD700;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.gender,
+.hobbies,
+.courses {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.gender input,
+.hobbies input,
+.courses input {
+    margin: 0;
+}
+
+.submit-reset {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 2;
+}
+
+.submit-reset input {
+    width: 48%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-reset input:hover {
+    background-color: #6A1BB0;
+    transform: scale(1.05);
+}
+
+span {
+    font-size: 0.9em;
+    color: #BBBBBB;
+}

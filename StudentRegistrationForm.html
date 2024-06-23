@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./StudentRegistrationForm.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="color">STUDENT REGISTRATION FORM</h1>
+        <form>
+            <label for="name">FIRST NAME*</label>
+            <input type="text" id="name" required maxlength="30" placeholder="Enter your first name">
+            <span class="full-width">(max 30 characters a-z and A-Z)</span>
+
+            <label for="sur">LAST NAME*</label>
+            <input type="text" id="sur" required maxlength="30" placeholder="Enter your last name">
+            <span class="full-width">(max 30 characters a-z and A-Z)</span>
+
+            <label for="dob">DATE OF BIRTH*</label>
+            <input type="text" id="dob" required class="full-width" placeholder="Enter date of birth">
+
+            <label for="em">EMAIL ID*</label>
+            <input type="email" id="em" required class="full-width" placeholder="Enter your email">
+
+            <label for="ph">MOBILE NUMBER*</label>
+            <input type="tel" id="ph" required pattern="[0-9]{10}" placeholder="phone number">
+            <span class="full-width">(10 digit number)</span>
+
+            <label>GENDER*</label>
+            <div class="gender full-width">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </div>
+
+            <label for="add">ADDRESS*</label>
+            <textarea name="address" id="add" cols="60" rows="5" required class="full-width"
+                placeholder="Enter your full detail address"></textarea>
+
+            <label for="city">CITY*</label>
+            <input type="text" id="city" required maxlength="30" placeholder="Your city">
+            <span class="full-width">(max 30 characters a-z and A-Z)</span>
+
+            <label for="pin">PIN CODE*</label>
+            <input type="text" id="pin" required pattern="[0-9]{6}" placeholder="your city pincode">
+            <span class="full-width">(6 digit number)</span>
+
+            <label for="state">STATE*</label>
+            <input type="text" id="state" required maxlength="30" placeholder="state">
+            <span class="full-width">(max 30 characters a-z and A-Z)</span>
+
+            <label>HOBBIES*</label>
+            <div class="hobbies full-width">
+                <label><input type="checkbox" name="hobbies" value="drawing"> Drawing</label>
+                <label><input type="checkbox" name="hobbies" value="singing"> Singing</label>
+                <label><input type="checkbox" name="hobbies" value="dancing"> Dancing</label>
+                <label><input type="checkbox" name="hobbies" value="sketching"> Sketching</label>
+                <label><input type="checkbox" name="hobbies" value="others"> Others</label>
+            </div>
+            <textarea name="comment" id="comm" cols="10" rows="1" placeholder="Specify if others"
+                class="full-width"></textarea>
+
+            <label for="q">QUALIFICATION*</label>
+            <textarea name="qualification" id="q" cols="60" rows="3" required class="full-width"></textarea>
+
+            <label>COURSES APPLIED FOR*</label>
+            <div class="courses full-width">
+                <label><input type="radio" name="co" value="bca" required> BCA</label>
+                <label><input type="radio" name="co" value="bcom" required> B.Com</label>
+                <label><input type="radio" name="co" value="bsc" required> B.Sc</label>
+                <label><input type="radio" name="co" value="ba" required> B.A</label>
+            </div>
+
+            <div class="submit-reset">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
